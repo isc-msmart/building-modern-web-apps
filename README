@@ -1,0 +1,26 @@
+Building Modern Web Applications
+Global Summit 2017
+Requires Cache 2016.2 or higher
+
+Instructions:
+
+1. Create a new CSP application called "/gs".
+
+2. Copy the contents of the /angular-app subdirectory to the location specified in the CSP Files Physical Path for the "/gs" CSP application.
+
+3. Create a new CSP application called "/gs/api".
+
+4. Set the Dispatch Class for "/gs/api" to "Todo.REST".
+
+5. Load and compile the classes Todo.REST and Todo.Task (from the /rest-service subdirectory) in the namespace for "/gs/api".
+
+6. Run the command:
+
+    Do ##class(Todo.Task).reset()
+
+This will populate the Todo-list with example data as seen in the presentation.
+
+7. Substituting your server and port where applicable, open http://localhost:57772/gs/index.html in your browser.
+
+Enjoy!
+-- Michael
